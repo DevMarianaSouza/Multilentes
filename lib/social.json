@@ -1,0 +1,6 @@
+{
+    "instagram":{"url":"https://www.instagram.com/cleanairac"},
+    "linkedin":{"url":"https://linkedin.com/company/cleanairac"},
+    "whatsappComercial":{"url":"https://api.whatsapp.com/send?phone=5551999092472", "number":"(51) 999-092-472"},
+    "whatsappTecnico":{"url":"https://api.whatsapp.com/send?phone=5551997804816", "number":"(51) 997-804-816"}
+}

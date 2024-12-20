@@ -1,0 +1,6 @@
+[
+    {"icon":"projetos", "title":"Projetos", "text":"Centrais térmicas, VRF e ar condicionado central."},
+    {"icon":"manutencao", "title":"Manutenção", "text":"Preditiva, preventiva e corretiva em sistemas de ar condicionado e centrais térmicas."},
+    {"icon":"instalacao", "title":"Instalação", "text":"Replacement e instalação de centrais de água gelada, VRF e ar condicionado central."},
+    {"icon":"vendas", "title":"Vendas", "text":"Peças e equipamentos de alta capacidade."}
+]

@@ -1,0 +1,32 @@
+$blue: rgb(77, 186, 229);
+$lightBlue: rgb(152, 208, 235);
+
+.searchBar{
+    margin-left: 0.75rem;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    input{
+        border-radius: 0.7rem;
+        padding: 0.3rem 0.7rem;
+        max-width: 130px;
+        border: none;
+        color: white;
+        font-family: inherit;
+        outline: none;
+
+        background: linear-gradient(120deg, $blue 0%, $lightBlue 70%);
+
+        &::placeholder{
+            color: white;
+        }
+    }
+
+    i{
+        position: absolute;
+        font-size: 0.7rem;
+        right: 0.55rem;
+    }
+}

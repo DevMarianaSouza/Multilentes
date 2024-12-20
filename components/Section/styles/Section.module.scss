@@ -1,0 +1,52 @@
+@import '../../../styles/variables';
+
+.section {
+    width: 100%;
+
+    .container {
+        padding: 1rem;
+        max-width: $maxWidth;
+        margin: 0 auto;
+
+        &.fluid {
+            width: 100%;
+            max-width: unset;
+            //outline: 1px solid red;
+        }
+
+        &.grid {
+            display: grid;
+
+            &.col3 {
+                grid-template-columns: repeat(3, 1fr);
+                align-items: flex-start;
+            }
+            &.col4 {
+                grid-template-columns: repeat(4, 1fr);
+                align-items: flex-start;
+            }
+        }
+
+        &.gap4 {
+            gap: 4rem;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .section {
+        .container {
+            max-width: unset !important;
+            text-align: center;
+
+            &.grid {
+                display: flex !important;
+                flex-direction: column;
+            }
+
+            &.gap4 {
+                gap: 4rem;
+            }
+        }
+    }
+}

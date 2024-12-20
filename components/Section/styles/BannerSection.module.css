@@ -1,0 +1,32 @@
+.bannerSection {
+  height: 70vh;
+  position: relative;
+  margin-top: -2rem;
+  margin-bottom: 2rem;
+  overflow: hidden;
+  background-image: url("../../../public/homeBanner.png");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .bannerSection {
+    height: 50vh;
+  }
+}
+@media screen and (max-width: 425px) {
+  .bannerSection {
+    height: 40vh;
+  }
+}
+@media screen and (max-width: 375px) {
+  .bannerSection {
+    height: 40vh;
+  }
+}
+@media screen and (max-width: 320px) {
+  .bannerSection {
+    height: 40vh;
+  }
+}/*# sourceMappingURL=BannerSection.module.css.map */

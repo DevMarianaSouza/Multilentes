@@ -1,0 +1,44 @@
+.bannerSection {
+    position: relative;
+    margin-top: -2rem;
+    overflow: hidden;
+
+    img{
+        left: unset !important;
+        top: unset !important;
+        bottom: unset !important;
+        right: unset !important;
+        margin: unset !important;
+        height: 100% !important;
+        width: auto !important;
+        //border: 5px solid red !important;
+        min-width: 100vw !important;
+        max-width: 100vw !important;
+        object-fit: cover !important;
+        object-position: left !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .bannerSection {
+        height: 50vh;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .bannerSection {
+        height: 30vh !important;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .bannerSection {
+        height: 20vh !important;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .bannerSection {
+        height: 20vh !important;
+    }
+}

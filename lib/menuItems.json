@@ -1,0 +1,7 @@
+[
+    {"id":"home", "url":"/", "text":"Home"},
+    {"id":"sobre-nos", "url":"/sobre-nos", "text":"Sobre nós"},
+    {"id":"servicos", "url":"/servicos", "text":"Serviços"},
+    {"id":"portfolio", "url":"/portfolio", "text":"Portfólio"},
+    {"id":"contato", "url":"/contato", "text":"Contato"}
+]

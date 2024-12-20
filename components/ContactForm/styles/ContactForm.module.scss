@@ -1,0 +1,214 @@
+@import '../../../styles/_variables';
+
+//$accent: $lightAccent;
+$success: #0f0;
+$fail: #f00;
+$fieldBackground: #fff;
+$fieldBorder: $accent;
+$fieldColor: $accent;
+$color: black;
+$borderRadius: 3px;
+$padding: 0.75rem 1rem;
+$pagebackground: white;
+$buttonBackground: $accent;
+$buttonColor: #fff;
+$maxWidth: 302px;
+
+.form{
+    width: 100%;
+    color: inherit;
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .inputGroup{
+            width: 100%;
+            max-width: $maxWidth;
+            margin-bottom: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            label{
+                width: fit-content;
+                font-size: 0.75rem;
+                font-weight: 700;
+                margin-left: 0.5rem;
+                margin-bottom: -0.5rem;
+                padding: 0 0.25rem;
+                background: $pagebackground;
+                z-index: 10;
+                color: $fieldBorder;
+            }
+
+            input{
+                background: $fieldBackground;
+                border: 1px solid $fieldBorder;
+                border-radius: $borderRadius;
+                outline: none;
+                padding: $padding;
+                margin: 0;
+                color: $fieldColor;
+                padding-left: 1rem;
+
+                &:disabled{
+                    opacity: 0.55 !important;
+                }
+            }
+
+            span{
+                font-size: 0.75rem;
+                margin: 0.25rem 0 0.25rem 0;
+                padding: 0.25rem 0 0 1rem;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                border-top: 1px solid rgba(255, 255, 255, 0.5);
+
+                &:hover{
+                    color: $lightAccent;
+                }
+            }
+
+            &.inline{
+                margin-top: -0.5rem !important;
+                padding-bottom: 1.5rem;
+                display: unset;
+
+                label,input{
+                    width: fit-content;
+                    display: inline;
+                }
+                input[type='checkbox']{
+                    margin-left: 0.5rem;
+                    -webkit-appearance:none;
+                    padding: 0.2rem 0.8rem;
+                    background:white;
+                    border-radius: 3px;
+                    border:2px solid rgba(0,0,0,0.3);
+                    cursor: pointer;
+                    position: relative;
+
+                    &:hover{
+                        background: $lightAccent;
+                    }
+
+                    &:after{
+                        content: "\f00c";
+                        font-family: "Font Awesome 5 Free";
+                        font-weight: 900;
+                        //border: 1px solid red;
+                        color: #000;
+                        font-size: 1.4rem;
+                        position: absolute;
+                        left: 0.08rem; top: -0.25rem;
+                        opacity: 0;
+                        transition: all 0.3s ease;
+                    }
+                }
+                input[type='checkbox']:checked {
+                    background: $lightAccent;
+
+                    &:after{
+                        opacity: 1;
+                    }
+                }
+            }
+            
+        }
+
+        .recaptcha{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-bottom: 1rem !important;
+            padding-bottom: 0.5rem;
+
+            span{
+                font-size: 1rem;
+                font-weight: 200;
+            }
+
+            .show{
+                display: unset !important;                
+            }
+            .hidden{
+                display: none !important;                
+            }
+        }
+
+        .messageGroup{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+            max-width: $maxWidth;
+            margin: 0 auto;
+
+            &.hidden{
+                display: none;
+                margin-bottom: none !important;
+            }
+            &.show{
+                display: unset !important;
+                margin-bottom: 1rem !important;
+            }
+
+            .success, .error{
+                border: 1px solid rgba(0,0,0,0.2);
+                padding: 0.3rem 0.66rem 0.5rem 0.66rem;
+                color: #000;
+                font-family: inherit;
+                font-weight: 200;
+                font-size: 1rem;
+            }
+            .success{
+                background: green;
+            }
+            .error{
+                background: blue;
+            }
+
+        }
+
+        .buttonGroup{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+
+            *{transition: all 0.3s ease;}
+
+            button{
+                background: rgb(61,26,110);
+                background: linear-gradient(90deg, rgba(61,26,110,1) 0%, rgba(66,144,224,1) 100%);
+                color: $buttonColor;
+                border: none; outline: none;
+                font-weight: 700;
+                font-size: 1.25rem !important;
+                width: auto;
+                border-radius: 2rem;
+                max-width: $maxWidth;
+                padding: .5rem 2rem !important;
+                transition: all 0.3s ease;
+
+                *{color: $buttonColor;}
+
+                &:first-of-type{
+                    padding: 0.5rem 0.8rem;
+                }
+
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+            
+        }
+
+    }
+    
+}

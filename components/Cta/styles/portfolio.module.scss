@@ -1,0 +1,57 @@
+@import '../../../styles/variables';
+
+.portfolio {
+    background-color: $accent;
+    background-image: url('/homeBg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    max-width: unset !important;
+    margin: 0 !important;
+    margin-top: 2rem !important;
+    padding: 3.5rem 0 !important;
+
+    * {
+        color: white;
+    }
+
+    .textBar {
+        background-color: rgba(0,30,96,0.85);
+        padding: 1rem;
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            text-align: center;
+
+            .title {
+                padding: 1rem;
+
+                h2 {
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                    border: 1px solid white;
+                    display: inline;
+                    padding: 0.5rem 1rem;
+                }
+            }
+
+            .text{
+                font-size: 1.1rem;
+                line-height: 1.5rem;
+            }
+
+            .link{
+                padding: 1rem;
+                *{
+                    color: #00A3E0;
+                }
+            }
+        }
+    }
+
+
+
+
+}

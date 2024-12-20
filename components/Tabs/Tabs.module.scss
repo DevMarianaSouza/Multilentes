@@ -1,0 +1,35 @@
+@import '../../styles/variables';
+$labelBg: $lightAccent;
+$background: white;
+$color: #CCEDF9;
+
+.tabs{
+    width: 100%;
+    max-width: 304px;
+
+    .tabLabels{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        .label{
+            padding: 10px 20px;
+            margin: 0;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            flex-grow: 1;
+            text-align: center;
+            color: white;
+
+            /* &:hover{
+                border: 1px solid $labelBg;
+            } */
+
+            /* &.active{
+                background: $labelBg;
+                //color: $background;
+                border: 1px solid $labelBg;
+            } */
+        }
+    }
+}

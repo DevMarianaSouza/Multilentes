@@ -1,0 +1,84 @@
+@import './variables';
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', 'Roboto', Oxygen,
+        Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif !important;
+}
+
+a {
+    color: inherit !important;
+    text-decoration: none !important;
+    transition: all 0.3s ease;
+
+    &:hover{
+        color: $lightAccent !important;
+        h4{color: $lightAccent !important;}
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+main {
+    margin-top: $mainTopMargin;
+    min-height: 100vh;
+}
+
+p{
+    font-weight: 400 !important;
+}
+
+h1,h2,h3,h4,h5{
+    font-weight: bold !important;
+    color: #001E60;
+    transition: all 0.3s ease !important;
+
+    &.border{
+        display: inline-flex;
+        border: 2px solid white !important;
+        color: white;
+        padding: .5rem 2rem;
+        font-weight: 900 !important;
+
+        &.dark{
+            color: #001E60;
+            border-color: #001E60 !important;
+        }
+    }
+    &.text-light{
+        color: white;
+    }
+}
+
+.fw-bold{
+    font-weight: 700 !important;
+}
+.fw-black{
+    font-weight: 900 !important;
+}
+.fw-regular{
+    font-weight: 400 !important;
+}
+.fw-light{
+    font-weight: 200 !important;
+}
+
+button:hover{
+    background-color: $lightAccent !important;
+}
+
+a.link{
+    color: $lightAccent !important;
+
+    &.underline:hover{
+        text-decoration: underline !important;
+    }
+}
+
+.container{
+    max-width: 1024px !important;
+}

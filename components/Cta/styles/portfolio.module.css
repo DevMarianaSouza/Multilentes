@@ -1,0 +1,44 @@
+.portfolio {
+  background-color: #001E60;
+  background-image: url("/homeBg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  max-width: unset !important;
+  margin: 0 !important;
+  margin-top: 2rem !important;
+  padding: 3.5rem 0 !important;
+}
+.portfolio * {
+  color: white;
+}
+.portfolio .textBar {
+  background-color: rgba(0, 30, 96, 0.85);
+  padding: 1rem;
+}
+.portfolio .textBar .container {
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+.portfolio .textBar .container .title {
+  padding: 1rem;
+}
+.portfolio .textBar .container .title h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: 1px solid white;
+  display: inline;
+  padding: 0.5rem 1rem;
+}
+.portfolio .textBar .container .text {
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+}
+.portfolio .textBar .container .link {
+  padding: 1rem;
+}
+.portfolio .textBar .container .link * {
+  color: #00A3E0;
+}/*# sourceMappingURL=portfolio.module.css.map */

@@ -1,0 +1,27 @@
+.contatoSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8rem;
+}
+.contatoSection .infos,
+.contatoSection .form {
+  flex-basis: 50%;
+  flex-grow: 0;
+}
+.contatoSection .infos {
+  background-color: #0696B7;
+  color: white;
+  padding: 2rem 3rem;
+  box-shadow: 0.35rem 0.35rem 10px 0px rgba(0, 0, 0, 0.6);
+}
+.contatoSection .infos * {
+  font-size: 1.25rem;
+  line-height: 1rem;
+}
+.contatoSection .infos .section {
+  margin-bottom: 2rem;
+}
+.contatoSection .infos .section .title {
+  font-weight: bold;
+}/*# sourceMappingURL=Contato.module.css.map */

@@ -1,0 +1,178 @@
+.form {
+  width: 100%;
+  color: inherit;
+}
+.form .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form .container .inputGroup {
+  width: 100%;
+  max-width: 302px;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.form .container .inputGroup label {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 0.75rem;
+  font-weight: 700;
+  margin-left: 0.5rem;
+  margin-bottom: -0.5rem;
+  padding: 0 0.25rem;
+  background: white;
+  z-index: 10;
+  color: #001E60;
+}
+.form .container .inputGroup input {
+  background: #fff;
+  border: 1px solid #001E60;
+  border-radius: 3px;
+  outline: none;
+  padding: 0.75rem 1rem;
+  margin: 0;
+  color: #001E60;
+  padding-left: 1rem;
+}
+.form .container .inputGroup input:disabled {
+  opacity: 0.55 !important;
+}
+.form .container .inputGroup span {
+  font-size: 0.75rem;
+  margin: 0.25rem 0 0.25rem 0;
+  padding: 0.25rem 0 0 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+.form .container .inputGroup span:hover {
+  color: #00A3E0;
+}
+.form .container .inputGroup.inline {
+  margin-top: -0.5rem !important;
+  padding-bottom: 1.5rem;
+  display: unset;
+}
+.form .container .inputGroup.inline label, .form .container .inputGroup.inline input {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: inline;
+}
+.form .container .inputGroup.inline input[type=checkbox] {
+  margin-left: 0.5rem;
+  -webkit-appearance: none;
+  padding: 0.2rem 0.8rem;
+  background: white;
+  border-radius: 3px;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  position: relative;
+}
+.form .container .inputGroup.inline input[type=checkbox]:hover {
+  background: #00A3E0;
+}
+.form .container .inputGroup.inline input[type=checkbox]:after {
+  content: "\f00c";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: #000;
+  font-size: 1.4rem;
+  position: absolute;
+  left: 0.08rem;
+  top: -0.25rem;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.form .container .inputGroup.inline input[type=checkbox]:checked {
+  background: #00A3E0;
+}
+.form .container .inputGroup.inline input[type=checkbox]:checked:after {
+  opacity: 1;
+}
+.form .container .recaptcha {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 1rem !important;
+  padding-bottom: 0.5rem;
+}
+.form .container .recaptcha span {
+  font-size: 1rem;
+  font-weight: 200;
+}
+.form .container .recaptcha .show {
+  display: unset !important;
+}
+.form .container .recaptcha .hidden {
+  display: none !important;
+}
+.form .container .messageGroup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  max-width: 302px;
+  margin: 0 auto;
+}
+.form .container .messageGroup.hidden {
+  display: none;
+  margin-bottom: none !important;
+}
+.form .container .messageGroup.show {
+  display: unset !important;
+  margin-bottom: 1rem !important;
+}
+.form .container .messageGroup .success, .form .container .messageGroup .error {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 0.3rem 0.66rem 0.5rem 0.66rem;
+  color: #000;
+  font-family: inherit;
+  font-weight: 200;
+  font-size: 1rem;
+}
+.form .container .messageGroup .success {
+  background: green;
+}
+.form .container .messageGroup .error {
+  background: blue;
+}
+.form .container .buttonGroup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.form .container .buttonGroup * {
+  transition: all 0.3s ease;
+}
+.form .container .buttonGroup button {
+  background: rgb(61, 26, 110);
+  background: linear-gradient(90deg, rgb(61, 26, 110) 0%, rgb(66, 144, 224) 100%);
+  color: #fff;
+  border: none;
+  outline: none;
+  font-weight: 700;
+  font-size: 1.25rem !important;
+  width: auto;
+  border-radius: 2rem;
+  max-width: 302px;
+  padding: 0.5rem 2rem !important;
+  transition: all 0.3s ease;
+}
+.form .container .buttonGroup button * {
+  color: #fff;
+}
+.form .container .buttonGroup button:first-of-type {
+  padding: 0.5rem 0.8rem;
+}
+.form .container .buttonGroup button:hover {
+  transform: scale(1.1);
+}/*# sourceMappingURL=ContactForm.module.css.map */

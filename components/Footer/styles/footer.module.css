@@ -1,0 +1,108 @@
+.footer {
+  width: 100%;
+  background-color: #001E60;
+}
+.footer * {
+  position: relative;
+  color: white;
+}
+.footer .container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+.footer .container .logo {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.footer .container .logo .socials {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  left: -15%;
+}
+.footer .container .logo .socials i {
+  font-size: 1.5rem;
+}
+.footer .container .logo .socials .line {
+  width: 100%;
+  height: 5px;
+  background-color: #00A3E0;
+}
+.footer .container .logo .socials .instagram a, .footer .container .logo .socials .linkedin a {
+  display: inline-block;
+  background-color: #00A3E0;
+  padding: 0;
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 20px;
+  padding-top: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .container .info {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1rem;
+  font-weight: 200;
+}
+.footer .container .info .col {
+  /* &:first-of-type{
+      text-align: right;
+  } */
+}
+.footer .container .info .col .title {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+.footer .container .info .col .content {
+  line-height: 1.5rem;
+}
+.footer .container .menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  padding-left: 2rem;
+}
+.footer .container .menu .menuItem {
+  margin-bottom: 0.5rem;
+}
+.footer .container .menu .menuItem:last-of-type {
+  margin-bottom: 0;
+}
+.footer .container .menu .menuItem a {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 900px) {
+  .footer .container {
+    grid-template-columns: 2fr 3fr;
+  }
+  .footer .container .info {
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+    padding: 1rem !important;
+    gap: 2rem;
+  }
+  .footer .container .info .hideOnMobile {
+    display: none;
+  }
+  .footer .container .menu {
+    display: none;
+  }
+}
+@media screen and (max-width: 425px) {
+  .footer .container {
+    display: flex !important;
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=footer.module.css.map */
