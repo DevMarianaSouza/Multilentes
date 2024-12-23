@@ -22,7 +22,7 @@ export default function Contato() {
     ]
 
     const socials = [
-        {title:'LinkedIn', text:'cleanairac', icon:'icon1', url:socialLinks.linkedin.url},
+        
         {title:'Whatsapp', text:'Comercial', icon:'icon2', url:socialLinks.whatsappComercial.url},
         {title:'Instagram', text:'@cleanairac', icon:'icon3', url:socialLinks.instagram.url},
     ]
@@ -30,7 +30,7 @@ export default function Contato() {
     return (
         <>
             <Head>
-                <title>Contato - Clean Air</title>
+                <title>Contato - Multilentes</title>
                 <meta name="description" content="Fale conosco" />
             </Head>
 
@@ -49,22 +49,24 @@ export default function Contato() {
                                     <h4 className="mb-0 text-light">Atendimento</h4>
                                     <div>
                                         De segunda à sexta<br/>
-                                        Das 08h às 17h50
+                                        Das 08h às 18h<br/>
+                                        Sábados<br/>
+                                        Das 09:30h às 12:30h
                                     </div>
                                 </div>
                                 <div>
                                     <h4 className="mb-0 text-light">Telefone</h4>
                                     <div>
-                                        (51) 3554.0017
+                                        (51) 3012-0226
                                     </div>
                                 </div>
                                 <div>
                                     <h4 className="mb-0 text-light">Endereço</h4>
                                     <div>
-                                        Rua Ida Schuch, 46<br/>
-                                        Bairro Vicentina<br/>
-                                        São Leopoldo/RS<br/>
-                                        CEP 93025-420
+                                        Av. São Pedro, 714<br/>
+                                        Bairro São Geraldo<br/>
+                                        Porto Alegre/RS<br/>
+                                        CEP 90230-123
                                     </div>
                                 </div>
                             </div>
@@ -85,7 +87,7 @@ export default function Contato() {
                                             hasFile={false}
                                             apiBody={(state)=>{
                                                     return {  
-                                                        recipient: 'martins@chavemestra.net',
+                                                        recipient: 'multilentes@multilentes.com.br',
                                                         name: findValueById(state, 'name'), 
                                                         email: findValueById(state, 'email'), 
                                                         message: findValueById(state, 'message')
@@ -178,16 +180,10 @@ export default function Contato() {
                                 overflow: 'hidden',
                                 fontSize: '0.9rem'
                             }}>
-                                <h3 className="mb-5 fw-black">E-mails</h3>
+                                <h3 className="mb-5 fw-black">E-mail</h3>
 
                                 <h5 className="mb-0 fw-black">Setor administrativo</h5>
-                                <div className="mb-3">administracao@cleanairarcondicionado.com.br</div>
-
-                                <h5 className="mb-0 fw-black">Setor comercial</h5>
-                                <div className="mb-3">comercial@cleanairarcondicionado.com.br</div>
-
-                                <h5 className="mb-0 fw-black">Departamento técnico</h5>
-                                <div className="mb-3">deptecnico@cleanairarcondicionado.com.br</div>
+                                <div className="mb-3">multilentes@multilentes.com.br</div>
                             </div>
                         </div>
                     

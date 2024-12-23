@@ -10,6 +10,9 @@ import svgProjetos from '../public/bubbles/projetos.svg'
 import svgManutencao from '../public/bubbles/manutencao.svg'
 import svgInstalacao from '../public/bubbles/instalacao.svg'
 import svgVendas from '../public/bubbles/vendas.svg'
+import MARCAS from 'public/MARCAS.png'
+import Link from 'next/link'
+
 import PortfolioSection from '../components/Cta/portfolio'
 import Form from '../components/NewsForm'
 import {findValueById} from '../lib/helper'
@@ -56,7 +59,7 @@ export default function Home() {
     return (
         <>
             <Head>
-                <title>Clean Air</title>
+                <title>Óptica Multilentes</title>
                 <meta name="description" content="Qualificação e comprometimento" />
             </Head>
 
@@ -71,7 +74,7 @@ export default function Home() {
                         minHeight:          '20vw', 
                         maxHeight:          '500px', 
                         position:           'relative', 
-                        backgroundImage:    'url(/fachada.jpg)', 
+                        backgroundImage:    'url(/interior.png)', 
                         backgroundPosition: backgroundPosition,
                         backgroundSize:     'cover'
                     }}
@@ -95,8 +98,8 @@ export default function Home() {
                                         fontWeight: '900',
                                         lineHeight: '2.5rem'
                                     }}>
-                                        Qualificação e<br/>
-                                        comprometimento
+                                        Um atendimento <br/>
+                                        de excelência
                                     </div>
                                     
                                     <div className="fs-5 py-3 px-4" style={{
@@ -106,11 +109,8 @@ export default function Home() {
                                         fontWeight: '200',
                                         lineHeight: '1.7rem',
                                     }}>
-                                        Atuando desde 2010 na área de 
-                                        refrigeração, a <b style={{fontWeight: 'bold'}}>Clean Air</b> busca
-                                        garantir a perfeita operação dos
-                                        sistemas de ar condicionado
-                                        visando a satisfação do cliente.
+                                        A <b style={{fontWeight: 'bold'}}>Multilentes</b> oferece um atendimento
+                                        qualificado, personalizado e comprometido com a sua necessidade.
                                     </div>
                                 </div>
                             </div>
@@ -118,17 +118,32 @@ export default function Home() {
                     </div>
                 
                 </div>
-
+                <div styles={{ 
+                        height: '100%',
+                        position: 'relative',
+                        display: 'flex',
+                        alignItems: 'center',
+                        marginTop: '50px',
+                }}
+                >
+                        <Link href="/" legacyBehavior><a><Image
+                            priority
+                            src={MARCAS}
+                            layout="intrinsic"
+                            objectFit="contain"
+                            alt="Marcas logo" /></a></Link>
+                    </div>               
                 <Section id="bubbles" className={`${sectionStyles.grid} ${sectionStyles.col4} ${sectionStyles.gap4}`}>
                     {BubbleContent.map(item=>{
                         const img = <Image src={bubbleIcons[item.icon]} layout="fill" objectFit="contain" alt={item.title} />
                         return <Bubble key={item.icon} title={item.title} icon={img}>{item.text}</Bubble>
                     })}
-                </Section>
+                 </Section>
+                 
+{/* 
+                <PortfolioSection/> */}
 
-                <PortfolioSection/>
-
-                <div id="newsletter" className="container py-5 my-4">
+                {/* <div id="newsletter" className="container py-5 my-4">
                     <div className="row">
                         <div className="col-lg-6 col-sm-12">
                             <div className="w-100 h-100">
@@ -157,7 +172,7 @@ export default function Home() {
                             />
                         </div>
                     </div>
-                </div>
+                </div> */}
 
             </main>            
             

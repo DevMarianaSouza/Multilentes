@@ -2,13 +2,12 @@ import React, {useEffect, useState} from 'react'
 import styles from './styles/navbar.module.css'
 import menuItems from '../../lib/menuItems.json'
 import Image from 'next/image'
-import logo from '../../public/logo-azul.png'
-import logoBranco from '../../public/logo-branco.png'
-import logoMidea from '../../public/midea.svg'
-import logoCarrier from '../../public/carrier.svg'
+import logo from '../../public/logo.png'
+import logoBranco from '../../public/logo.png'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import social from '../../lib/social.json'
+
 
 export default function Navbar() {
 
@@ -89,20 +88,9 @@ export default function Navbar() {
                             src={logo}
                             layout="fill"
                             objectFit="contain"
-                            alt="Clean Air logo" /></a></Link>
+                            alt="Multilentes logo" /></a></Link>
                     </div>
-                    <div className={styles.partners}>
-                        <div className={styles.item}>
-                            <Image
-                                src={logoMidea}
-                                alt="Clean Air logo" />
-                        </div>
-                        <div className={styles.item}>
-                            <Image
-                                src={logoCarrier}                                
-                                alt="Clean Air logo" />
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
 

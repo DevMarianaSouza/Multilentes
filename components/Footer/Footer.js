@@ -13,8 +13,8 @@ export default function footer() {
                 <div className={styles.logo}>
                     <div className={styles.logo}>
                         <Image
-                            src="/logo-branco.png"
-                            alt="logo Clean Air, ar condicionado"
+                            src="/logo.png"
+                            alt="logo"
                             layout="fill"
                             objectFit="contain"
                         />
@@ -24,9 +24,6 @@ export default function footer() {
                         <div className={styles.instagram}>
                             <a href={socials.instagram.url}><i className="fa-brands fa-instagram"></i></a>
                         </div>
-                        <div className={styles.linkedin}>
-                            <a href={socials.linkedin.url}><i className="fa-brands fa-linkedin-in"></i></a>
-                        </div>
                     </div>
                 </div>
 
@@ -34,19 +31,19 @@ export default function footer() {
                     <div className={styles.col}>
                         <div className={styles.title}>Endereço</div>
                         <div className={styles.content}>
-                            Rua Ida Schuch, 46<br/>
-                            Bairro Vicentina<br/>
-                            São Leopoldo/RS<br/>
-                            CEP 93025-420
+                            Av. São Pedro, 714 <br/>
+                            Bairro São Geraldo<br/>
+                            Porto Alegre/RS<br/>
+                            CEP 90230-123
                         </div>
                     </div>
                     <div className={styles.col}>
                         <div className={styles.title}>Contato</div>
                         <div className={styles.content}>
-                            Horário: 08h às 17h50<br/>
-                            Telefone: (51) 3554.0017<br/>
-                            <span className={styles.hideOnMobile}>administracao@cleanairarcondicionado.com.br</span><br/>
-                            <span className={styles.hideOnMobile}>comercial@cleanairarcondicionado.com.br</span>
+                            Horário: Seg à Sex - 08h às 18h<br/>
+                            Sábado - 09:30h às 12:30h<br/>
+                            Telefone: (51) 99348-3947<br/>
+                            <span className={styles.hideOnMobile}>multilentes@multilentes.com.br</span><br/>
                         </div>
                     </div>
                 </div>

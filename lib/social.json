@@ -1,6 +1,6 @@
 {
-    "instagram":{"url":"https://www.instagram.com/cleanairac"},
+    "instagram":{"url":"https://www.instagram.com/multilentespoa/"},
     "linkedin":{"url":"https://linkedin.com/company/cleanairac"},
-    "whatsappComercial":{"url":"https://api.whatsapp.com/send?phone=5551999092472", "number":"(51) 999-092-472"},
-    "whatsappTecnico":{"url":"https://api.whatsapp.com/send?phone=5551997804816", "number":"(51) 997-804-816"}
+    "whatsappComercial":{"url":"https://api.whatsapp.com/send?phone=5551993483947", "number":"(51) 993-483-947"},
+    "whatsappTecnico":{"url":"https://api.whatsapp.com/send?phone=5551993483947", "number":"(51) 993-483-947"}
 }

@@ -14,7 +14,7 @@ export default function BannerSection(props) {
                 src={img || banner}
                 className={styles.banner}
                 layout="fill"
-                alt="Clean Air banner" />
+                alt="banner" />
         </div>
     )
 }
