@@ -24,7 +24,7 @@ export default function Contato() {
     const socials = [
         
         {title:'Whatsapp', text:'Comercial', icon:'icon2', url:socialLinks.whatsappComercial.url},
-        {title:'Instagram', text:'@cleanairac', icon:'icon3', url:socialLinks.instagram.url},
+        {title:'Instagram', text:'@multilentespoa', icon:'icon3', url:socialLinks.instagram.url},
     ]
 
     return (

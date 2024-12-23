@@ -12,14 +12,16 @@
 }
 .section .container.grid {
   display: grid;
+  justify-content: center;
+  align-items: center;
 }
 .section .container.grid.col3 {
   grid-template-columns: repeat(3, 1fr);
-  align-items: flex-start;
+  gap: 4rem;
 }
 .section .container.grid.col4 {
   grid-template-columns: repeat(4, 1fr);
-  align-items: flex-start;
+  gap: 4rem;
 }
 .section .container.gap4 {
   gap: 4rem;

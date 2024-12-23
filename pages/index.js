@@ -6,12 +6,12 @@ import sectionStyles from '../components/Section/styles/Section.module.css'
 import BannerSection from '../components/Section/BannerSection'
 import Bubble from '../components/Bubble/Bubble'
 import BubbleContent from '../lib/bubbles.json'
-import svgProjetos from '../public/bubbles/projetos.svg'
-import svgManutencao from '../public/bubbles/manutencao.svg'
-import svgInstalacao from '../public/bubbles/instalacao.svg'
-import svgVendas from '../public/bubbles/vendas.svg'
 import MARCAS from 'public/MARCAS.png'
 import Link from 'next/link'
+import svgOculosdeSol from '../public/bubbles/svgOculosdeSol.svg'
+import svgLentesdecontato from '../public/bubbles/svgLentesdecontato.svg'
+import svgOculosdegrau from '../public/bubbles/svgOculosdegrau.svg'
+
 
 import PortfolioSection from '../components/Cta/portfolio'
 import Form from '../components/NewsForm'
@@ -20,10 +20,10 @@ import {findValueById} from '../lib/helper'
 export default function Home() {
 
     const bubbleIcons = {
-        'projetos': svgProjetos,
-        'manutencao': svgManutencao,
-        'instalacao': svgInstalacao,
-        'vendas': svgVendas
+        'oculosdegrau': svgOculosdegrau,
+        'lentes': svgLentesdecontato,
+        'oculosdesol': svgOculosdeSol,
+        
     }
 
     const fields = [
