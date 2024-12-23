@@ -133,7 +133,7 @@ export default function Home() {
                             objectFit="contain"
                             alt="Marcas logo" /></a></Link>
                     </div>               
-                <Section id="bubbles" className={`${sectionStyles.grid} ${sectionStyles.col4} ${sectionStyles.gap4}`}>
+                <Section id="bubbles" className={`${sectionStyles.grid} ${sectionStyles.col3} ${sectionStyles.gap4}`}>
                     {BubbleContent.map(item=>{
                         const img = <Image src={bubbleIcons[item.icon]} layout="fill" objectFit="contain" alt={item.title} />
                         return <Bubble key={item.icon} title={item.title} icon={img}>{item.text}</Bubble>
