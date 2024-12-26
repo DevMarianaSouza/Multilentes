@@ -118,7 +118,7 @@ export default function Home() {
                     </div>
                 
                 </div>
-                <div styles={{ 
+                <div style={{ 
                         height: '100%',
                         position: 'relative',
                         display: 'flex',
