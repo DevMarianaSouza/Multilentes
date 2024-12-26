@@ -56,13 +56,12 @@ export default function Navbar() {
         window.addEventListener("scroll", handleScroll)
     },[])
 
-    return (
-    <>
+    return (<>
         {/* MOBILE OVERLAY */}
         <nav className={`${styles.mobileMenu} ${!showMobileMenu && styles.hidden}`}>
             <div className={styles.filler} onClick={()=>setShowMobileMenu(false)}></div>
             <div className={styles.menu}>
-                <div className={styles.menuItem}><Link href="/">
+                <div className={styles.menuItem}><Link href="/" legacyBehavior>
                     <Image
                         src={logoBranco}
                         layout="fill"
@@ -70,25 +69,26 @@ export default function Navbar() {
                         alt="Clean Air logo branco" /></Link></div>
                 {
                     menuItems.map(item => {
-                        return <div className={styles.menuItem} key={item.id}>
-                                    <Link href={item.url}><a className={router.pathname==item.url?'link':''}>{item.text}</a></Link>
-                                </div>
+                        return (
+                            <div className={styles.menuItem} key={item.id}>
+                                        <Link href={item.url} className={router.pathname==item.url?'link':''}>{item.text}</Link>
+                                    </div>
+                        );
                     })
                 }
                 <div className={styles.menuItem}><a onClick={()=>setShowMobileMenu(false)}><i className="fa-solid fa-circle-chevron-left"></i> Voltar</a></div>
             </div>
         </nav>
-            
         <nav className={navbarClasses}>
             <div className={styles.topBar}>
                 <div className={styles.container}>
                     <div className={styles.logo}>
-                        <Link href="/"><a><Image
+                        <Link href="/"><Image
                             priority
                             src={logo}
                             layout="fill"
                             objectFit="contain"
-                            alt="Multilentes logo" /></a></Link>
+                            alt="Multilentes logo" /></Link>
                     </div>
                     
                 </div>
@@ -99,9 +99,11 @@ export default function Navbar() {
                     <div className={styles.menu}>
                         {
                             menuItems.map(item => {
-                                return <div className={styles.menuItem} key={item.id}>
-                                            <Link href={item.url}><a className={router.pathname==item.url?'link':''}>{item.text}</a></Link>
-                                        </div>
+                                return (
+                                    <div className={styles.menuItem} key={item.id}>
+                                                <Link href={item.url} className={router.pathname==item.url?'link':''}>{item.text}</Link>
+                                            </div>
+                                );
                             })
                         }
                     </div>
@@ -114,6 +116,5 @@ export default function Navbar() {
             </div>
 
         </nav>
-    </>
-    )
+    </>);
 }
