@@ -159,9 +159,9 @@ export default function Contato() {
                                     return (
                                         <div key={item.title} className="col">
                                             <div className="d-flex justify-content-center mt-5 mb-3" style={{maxHeight:'6rem', position: 'relative'}}>
-                                                <Link href={item.url} legacyBehavior><a target="_blank"><img className="img-fluid" src={`/contato/${item.icon}.png`}/></a></Link>
+                                                <Link href={item.url}><a target="_blank"><img className="img-fluid" src={`/contato/${item.icon}.png`}/></a></Link>
                                             </div>
-                                            <Link href={item.url} legacyBehavior><a target="_blank">
+                                            <Link href={item.url}><a target="_blank">
                                                 <h4 className="mb-0 text-light">{item.title}</h4>
                                                 <div>{item.text}</div>
                                             </a></Link>
