@@ -27,4 +27,4 @@ const webpack = {
   }
 }
 
-module.exports = [[nextConfig, webpack, env]]
+module.exports = nextConfig;
