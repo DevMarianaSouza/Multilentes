@@ -17,7 +17,7 @@ export default function portfolio() {
                         </p>
                     </div>
                     <div className={styles.link}>
-                        <Link href="/portfolio" legacyBehavior><a className="link underline fw-bold">Acesse o catálogo completo <i className="fa-solid fa-caret-right"></i></a></Link>
+                        <Link href="/portfolio"><a className="link underline fw-bold">Acesse o catálogo completo <i className="fa-solid fa-caret-right"></i></a></Link>
                     </div>
                 </div>
             </div>

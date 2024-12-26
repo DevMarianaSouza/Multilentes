@@ -126,7 +126,7 @@ export default function Home() {
                         marginTop: '50px',
                 }}
                 >
-                        <Link href="/" legacyBehavior><a><Image
+                        <Link href="/"><a><Image
                             priority
                             src={MARCAS}
                             layout="intrinsic"

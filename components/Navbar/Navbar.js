@@ -62,7 +62,7 @@ export default function Navbar() {
         <nav className={`${styles.mobileMenu} ${!showMobileMenu && styles.hidden}`}>
             <div className={styles.filler} onClick={()=>setShowMobileMenu(false)}></div>
             <div className={styles.menu}>
-                <div className={styles.menuItem}><Link href="/" legacyBehavior>
+                <div className={styles.menuItem}><Link href="/">
                     <Image
                         src={logoBranco}
                         layout="fill"
@@ -71,7 +71,7 @@ export default function Navbar() {
                 {
                     menuItems.map(item => {
                         return <div className={styles.menuItem} key={item.id}>
-                                    <Link href={item.url} legacyBehavior><a className={router.pathname==item.url?'link':''}>{item.text}</a></Link>
+                                    <Link href={item.url}><a className={router.pathname==item.url?'link':''}>{item.text}</a></Link>
                                 </div>
                     })
                 }
@@ -83,7 +83,7 @@ export default function Navbar() {
             <div className={styles.topBar}>
                 <div className={styles.container}>
                     <div className={styles.logo}>
-                        <Link href="/" legacyBehavior><a><Image
+                        <Link href="/"><a><Image
                             priority
                             src={logo}
                             layout="fill"
@@ -100,7 +100,7 @@ export default function Navbar() {
                         {
                             menuItems.map(item => {
                                 return <div className={styles.menuItem} key={item.id}>
-                                            <Link href={item.url} legacyBehavior><a className={router.pathname==item.url?'link':''}>{item.text}</a></Link>
+                                            <Link href={item.url}><a className={router.pathname==item.url?'link':''}>{item.text}</a></Link>
                                         </div>
                             })
                         }
